@@ -18,7 +18,7 @@ export const toDoslice=createSlice({
             state.value.push(action.payload)
         },
         complete:(state,action)=>{
-            state.value
+            state.value = action.payload
         }
     }
 })
